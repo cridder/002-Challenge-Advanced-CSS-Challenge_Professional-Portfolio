@@ -1,6 +1,8 @@
 # 002-Challenge-Advanced-CSS-Challenge_Professional-Portfolio
 Module 2 Challenge
 
+https://cridder.github.io/002-Challenge-Advanced-CSS-Challenge_Professional-Portfolio/
+
 ## User Story
 
 AS AN employer
