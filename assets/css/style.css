@@ -2,8 +2,6 @@
   --colorbackground: rgba(0, 0, 0, 0.132);
 }
 
-/* --------------------------------- */
-/* BODY */
 body {
   font-family: Helvetica, Arial, sans-serif;  
   background-color: var(--colorbackground);
@@ -13,10 +11,13 @@ body {
 .fb-column {
   display: flex;
   flex-direction: column;
+  margin: 10px;
+  border: 1px solid black;
 }
 
 .fb-flex {
   display: flex;
+  flex-direction: row;
   margin: 10px;
   border: 1px solid black;
 }
@@ -26,94 +27,42 @@ body {
   flex-direction: column;
 }
 
+.fb-flex-item-100 {
+  display: flex;
+  margin: 5px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
 .fb-flex-item {
   display: flex;
-  align-self: flex-end;
+  flex-grow: 1;
   margin: 5px;
   border: 1px solid black;
   padding: 10px;
 }
 
-
-
-
-
-/* --------------------------------- */
-/* HEADER */
-
-
-/* --------------------------------- */
-/* MAIN */
-
-.flex-box-main {
-  display: flex;
-  align-self: flex-end;
+.fb-flex-item-25 {
+width: 25%;
+margin: 5px;
+border: 1px solid black;
+padding: 10px;
 }
-
-/* --------------------------------- */
-/* SECTION */
-.flex-box-section1-container {
-  display: flex;
+.fb-flex-item-75 {
+width: 75%;
+margin: 5px;
+border: 1px solid black;
+padding: 10px;
 }
-
-.flex-box-section2-container {
-  display: flex;
+.fb-flex-item-33 {
+width: 33.33333333%;
+margin: 5px;
+border: 1px solid black;
+padding: 10px;
 }
-
-.flex-box-section3-container {
-  display: flex;
-}
-
-.flex-box-section4-container {
-  display: flex;
-}
-
-.flex-box-section2-container {
-  display: flex;
-}
-
-/* --------------------------------- */
-/* FOOTER */
-.flex-box-footer-container {
-  display: flex;
-}
-
-.flex-box-footer {
-  display: flex;
-  align-self: flex-end;
-  margin: 5px;
-  border: 1px solid black;
-  padding: 10px;
-}
-
-/* --------------------------------- */
-
-.flex-box-image-container{  
-  margin: 10px;
-  width: 100%;
-  height: 100px;
-  text-align: right;
-  vertical-align: baseline;
-  background-color: red
- 
-}
-
-text-bottom-right {
-  /* position: absolute; */
-  text-align: right;
-  vertical-align: bottom;
-}
-
-.flex-box-section {
-  margin: 10px;
-  border: 1px solid black;
-
-}
-
 
 @media screen and (max-width: 768px) {
   /* Use flex-direction to stack the navbar, sidebar, and body */
-  .fb-flex,
-  nav {
+  .fb-flex {
     flex-direction: column;
   }
